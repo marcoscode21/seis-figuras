@@ -3,224 +3,170 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light">
 <meta name="theme-color" content="#F7F6F3">
-<title>Seis Figuras · Aplicación de productividad · Casa Alba Catering</title>
+<title>Seis Figuras · Tu negocio en una sola pantalla</title>
+<meta name="description" content="Plataforma de productividad para pequeños negocios en Puerto Rico: calendario, facturación con IVU, rentabilidad, menú y asesor de IA. Proyecto académico con datos ficticios.">
 <link rel="icon" href="logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 
-<div class="shell">
-  <aside class="side">
-    <a class="brand" href="#resumen" aria-label="Seis Figuras, aplicación de productividad. Ir al resumen">
-      <img src="logo.png" alt="" width="45" height="68">
-      <span>Seis Figuras<small>Aplicación de productividad</small></span>
-    </a>
-    <div class="account" translate="no">
-      <div class="avatar sm" aria-hidden="true">CA</div>
-      <div><b>Casa Alba Catering</b><small>San Juan, Puerto Rico</small></div>
+<header class="top">
+  <a class="brand" href="#inicio" aria-label="Seis Figuras, ir al inicio">
+    <img src="logo.png" alt="" width="30" height="46">
+    <span translate="no">Seis Figuras</span>
+  </a>
+  <nav aria-label="Principal">
+    <a href="#producto">Producto</a>
+    <a href="#garantias">Garantías</a>
+    <a href="#planes">Planes</a>
+    <a class="btn small" href="#inscribete">Inscríbete</a>
+  </nav>
+</header>
+
+<main id="contenido" tabindex="-1">
+
+  <section id="inicio" class="hero">
+    <p class="eyebrow">Para pequeños negocios de Puerto Rico</p>
+    <h1>Sepa cuánto gana de verdad y quién le debe, sin ser contador.</h1>
+    <p class="lead">Seis Figuras junta su calendario, sus facturas con IVU, la rentabilidad de cada trabajo y su menú en una sola pantalla. En español, desde el celular y sin instalar nada.</p>
+    <div class="cta-row">
+      <a class="btn" href="#inscribete">Empieza gratis 14 días</a>
+      <a class="btn ghost" href="app.html#resumen">Ver la demostración</a>
     </div>
-    <nav aria-label="Principal">
-      <a href="#resumen" data-page="resumen">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 3h6v6H3zM11 3h6v3h-6zM11 8h6v9h-6zM3 11h6v6H3z"/></svg>Resumen</a>
-      <a href="#calendario" data-page="calendario">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14v12H3zM3 9h14M7 3v4M13 3v4"/></svg>Calendario</a>
-      <a href="#facturacion" data-page="facturacion">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2h10v16l-2.5-1.5L10 18l-2.5-1.5L5 18zM8 7h4M8 11h4"/></svg>Facturación</a>
-      <a href="#rentabilidad" data-page="rentabilidad">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 17V3M3 17h14M7 14v-4M11 14V7M15 14V9"/></svg>Rentabilidad</a>
-      <a href="#menu" data-page="menu">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 2v6a2 2 0 0 0 0 0M4 2v5a2 2 0 0 0 4 0V2M6 9v9M14 18V2c-2 1-3 4-3 7h3"/></svg>Menú</a>
-      <a href="#analisis" data-page="analisis">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l1.8 5.2L17 9l-5.2 1.8L10 16l-1.8-5.2L3 9l5.2-1.8zM16 14v4M14 16h4"/></svg>Análisis IA</a>
-      <button class="add-page" type="button">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg>Añadir página</button>
-    </nav>
-  </aside>
+    <p class="muted">Sin tarjeta de crédito. Se cancela cuando quiera.</p>
+  </section>
 
-  <main id="contenido" tabindex="-1">
+  <section id="quienes" class="band">
+    <div class="wrap">
+      <h2>Quiénes somos y cómo podemos ayudarte</h2>
+      <p class="lead">Muchos dueños de negocios llevan las cuentas en papel, WhatsApp o Excel. Eso cuesta tiempo, facturas sin cobrar y trabajos que dejan poco margen sin que nadie lo note. Seis Figuras convierte esos datos en decisiones claras.</p>
+    </div>
+  </section>
 
-    <!-- RESUMEN -->
-    <section id="resumen" class="page" hidden>
-      <header class="head profile-card">
-        <div class="cover" aria-hidden="true"></div>
-        <div class="profile-body">
-          <div class="avatar lg" aria-hidden="true" translate="no">CA</div>
-          <div class="who">
-            <p class="eyebrow">Perfil del negocio</p>
-            <h1 tabindex="-1" translate="no">Casa Alba Catering</h1>
-            <p class="lead">Banquetes y comida criolla para bodas, quinceañeras y eventos corporativos en el área metropolitana de San Juan.</p>
-          </div>
-        </div>
-        <dl class="facts">
-          <div><dt>Categoría</dt><dd>Catering y banquetes</dd></div>
-          <div><dt>Ubicación</dt><dd>Santurce, San Juan, PR</dd></div>
-          <div><dt>Teléfono</dt><dd>787-555-0142</dd></div>
-          <div><dt>Correo</dt><dd translate="no">hola@casaalba.example</dd></div>
-          <div><dt>Fundado</dt><dd>2019</dd></div>
-          <div><dt>Equipo</dt><dd>9 personas</dd></div>
-        </dl>
-        <div class="stats" id="perfilStats"></div>
-      </header>
+  <section id="producto" class="wrap">
+    <p class="eyebrow">Producto</p>
+    <h2>Seis herramientas, una sola pantalla</h2>
+    <ul class="features">
+      <li><h3>Resumen</h3><p>Ingresos, utilidad, lo que le deben y los próximos eventos al abrir la app.</p></li>
+      <li><h3>Calendario</h3><p>Citas y eventos por mes, con tipo, lugar e invitados.</p></li>
+      <li><h3>Facturación</h3><p>Facturas con el IVU de Puerto Rico (11.5&nbsp;%) calculado, y su estado: pagada, pendiente o vencida.</p></li>
+      <li><h3>Rentabilidad</h3><p>Cuánto entra, cuánto cuesta y cuánto queda, por mes y por evento.</p></li>
+      <li><h3>Menú y costos</h3><p>El precio y el costo de cada plato o servicio para cuidar el margen.</p></li>
+      <li><h3>Análisis con IA</h3><p>Recomendaciones sobre qué mejorar primero, basadas en sus cifras.</p></li>
+    </ul>
+    <p class="muted">Todas las cifras de la demostración son ficticias y pertenecen a un negocio de ejemplo, Casa Alba Catering.</p>
+  </section>
 
-      <div class="grid" id="kpis"></div>
+  <section id="garantias" class="band">
+    <div class="wrap">
+      <p class="eyebrow">Garantías</p>
+      <h2>Pruébelo sin riesgo</h2>
+      <ul class="checks">
+        <li><b>14 días gratis</b> con todas las funciones.</li>
+        <li><b>Devolución de 30 días</b> si no es lo que esperaba.</li>
+        <li><b>Sus datos son suyos</b> y se pueden exportar cuando quiera.</li>
+        <li><b>Sin contratos</b>: cancela en cualquier momento, sin penalidad.</li>
+        <li><b>Accesible para todos</b>: funciona con teclado y lectores de pantalla.</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="grid two">
-        <article class="card" style="--i:4">
-          <div class="card-head"><h2>Próximos eventos</h2><a class="link" href="#calendario">Ver calendario</a></div>
-          <ul class="list" id="proximos"></ul>
-        </article>
-        <article class="card" style="--i:5">
-          <div class="card-head"><h2>Por cobrar</h2><a class="link" href="#facturacion">Ver facturas</a></div>
-          <ul class="list" id="porCobrar"></ul>
-        </article>
-      </div>
-
-    </section>
-
-    <!-- CALENDARIO -->
-    <section id="calendario" class="page" hidden>
-      <header class="head">
-        <p class="eyebrow">Citas y eventos</p>
-        <h1 tabindex="-1">Calendario</h1>
-        <p class="lead">Eventos confirmados y citas con clientes, por fecha.</p>
-      </header>
-
-      <div class="cal-layout">
-        <article class="card" style="--i:0">
-          <div class="cal-nav">
-            <button class="icon-btn" type="button" id="calPrev" aria-label="Mes anterior">&larr;</button>
-            <h2 id="calTitulo" aria-live="polite"></h2>
-            <button class="icon-btn" type="button" id="calNext" aria-label="Mes siguiente">&rarr;</button>
-          </div>
-          <div class="cal" id="calGrid"></div>
-          <p class="legend">
-            <span class="tag blu">Boda</span><span class="tag grn">Corporativo</span><span class="tag yel">Social</span><span class="tag gry">Cita</span>
-          </p>
-        </article>
-        <article class="card" style="--i:1">
-          <h2>Agenda del mes</h2>
-          <ul class="list" id="agenda"></ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- FACTURACIÓN -->
-    <section id="facturacion" class="page" hidden>
-      <header class="head">
-        <p class="eyebrow">Cobros</p>
-        <h1 tabindex="-1">Facturación</h1>
-        <p class="lead">Facturas emitidas con IVU de Puerto Rico (10.5&nbsp;% estatal más 1&nbsp;% municipal), anticipos y lo que falta por cobrar.</p>
-      </header>
-
-      <div class="grid" id="facKpis"></div>
-
-      <article class="card" style="--i:4">
-        <div class="card-head">
-          <h2>Facturas</h2>
-          <div class="chips" role="group" aria-label="Filtrar por estado" id="facFiltros">
-            <button type="button" aria-pressed="true" data-f="todas">Todas</button>
-            <button type="button" aria-pressed="false" data-f="Pendiente">Pendientes</button>
-            <button type="button" aria-pressed="false" data-f="Vencida">Vencidas</button>
-            <button type="button" aria-pressed="false" data-f="Pagada">Pagadas</button>
-          </div>
-        </div>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Tabla de facturas">
-          <table>
-            <thead><tr><th scope="col">Factura</th><th scope="col">Cliente y concepto</th><th scope="col">Emitida</th><th scope="col">Vence</th><th scope="col" class="r">Subtotal</th><th scope="col" class="r">IVU 11.5&nbsp;%</th><th scope="col" class="r">Total</th><th scope="col">Estado</th></tr></thead>
-            <tbody id="facBody"></tbody>
-          </table>
-        </div>
+  <section id="planes" class="wrap">
+    <p class="eyebrow">Ofertas y duración</p>
+    <h2>Un precio simple</h2>
+    <div class="plans">
+      <article class="plan">
+        <h3>Prueba gratis</h3>
+        <p class="price">$0<small> por 14 días</small></p>
+        <ul><li>Todas las funciones</li><li>Sin tarjeta de crédito</li></ul>
       </article>
-    </section>
-
-    <!-- RENTABILIDAD -->
-    <section id="rentabilidad" class="page" hidden>
-      <header class="head">
-        <p class="eyebrow">Junio a septiembre 2026</p>
-        <h1 tabindex="-1">Rentabilidad</h1>
-        <p class="lead">Cuánto entra, cuánto cuesta producirlo y cuánto queda. Ingresos sin IVU, que se le entrega a Hacienda. Los gastos fijos suman $1,800 al mes.</p>
-      </header>
-
-      <div class="grid" id="rentKpis"></div>
-
-      <div class="grid two">
-        <article class="card" style="--i:4">
-          <h2>Ingresos y costos por mes</h2>
-          <div id="rentBars"></div>
-        </article>
-        <article class="card" style="--i:5">
-          <h2>En qué se va el dinero</h2>
-          <div id="rentCostos"></div>
-        </article>
-      </div>
-
-      <article class="card" style="--i:6">
-        <h2>Resultado por mes</h2>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Tabla de resultados por mes">
-          <table>
-            <thead><tr><th scope="col">Mes</th><th scope="col" class="r">Ingresos</th><th scope="col" class="r">Costos variables</th><th scope="col" class="r">Gastos fijos</th><th scope="col" class="r">Utilidad neta</th><th scope="col" class="r">Margen</th></tr></thead>
-            <tbody id="rentMeses"></tbody>
-          </table>
-        </div>
+      <article class="plan feat">
+        <h3>Mensual</h3>
+        <p class="price">$25<small> al mes</small></p>
+        <ul><li>Los 6 módulos y análisis con IA</li><li>Soporte por correo y WhatsApp</li><li>Cancela cuando quiera</li></ul>
       </article>
-
-      <article class="card" style="--i:7">
-        <h2>Rentabilidad por evento</h2>
-        <p class="muted">Margen = (ingresos &minus; comida, personal, logística y otros) &divide; ingresos. Verde desde 30 %, rojo bajo 25 %.</p>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Tabla de rentabilidad por evento">
-          <table>
-            <thead><tr><th scope="col">Fecha</th><th scope="col">Evento</th><th scope="col" class="r">Invitados</th><th scope="col" class="r">Ingresos</th><th scope="col" class="r">Costos</th><th scope="col" class="r">Utilidad</th><th scope="col">Margen</th></tr></thead>
-            <tbody id="rentEventos"></tbody>
-          </table>
-        </div>
+      <article class="plan">
+        <h3>Anual</h3>
+        <p class="price">$250<small> al año</small></p>
+        <ul><li>Dos meses gratis</li><li>Equivale a $20.83 al mes</li><li>Todo lo del plan mensual</li></ul>
       </article>
-    </section>
+    </div>
+    <h3 class="sub">Formas de pago previstas</h3>
+    <p class="muted">Plataformas de cobro: ATH Móvil Business, Stripe y PayPal. Tarjetas de crédito y débito. Acceso inmediato después de inscribirse, sin envíos. En este proyecto son integraciones planificadas: no se procesa ningún pago real.</p>
+  </section>
 
-    <!-- MENÚ -->
-    <section id="menu" class="page" hidden>
-      <header class="head">
-        <p class="eyebrow">Carta criolla 2026</p>
-        <h1 tabindex="-1">Menú</h1>
-        <p class="lead">Paquetes por persona y carta completa, con el costo de cada plato para cuidar el margen.</p>
-      </header>
+  <section id="inscribete" class="band">
+    <div class="wrap narrow">
+      <p class="eyebrow">Inscríbete</p>
+      <h2>Empieza tu prueba gratis</h2>
+      <form id="form" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nombre">
+          <span class="err" id="e-nombre" hidden>Escribe tu nombre.</span>
+        </div>
+        <div class="field">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" spellcheck="false" required aria-describedby="e-correo">
+          <span class="err" id="e-correo" hidden>Escribe un correo válido, por ejemplo nombre@ejemplo.com.</span>
+        </div>
+        <div class="field">
+          <label for="tipo">Tipo de negocio</label>
+          <select id="tipo" name="tipo" required aria-describedby="e-tipo">
+            <option value="">Selecciona una opción</option>
+            <option>Catering y banquetes</option>
+            <option>Belleza y bienestar</option>
+            <option>Taller o reparaciones</option>
+            <option>Fotografía y eventos</option>
+            <option>Construcción y contratistas</option>
+            <option>Otro</option>
+          </select>
+          <span class="err" id="e-tipo" hidden>Selecciona el tipo de negocio.</span>
+        </div>
+        <button class="btn" type="submit">Empezar gratis</button>
+        <p class="muted">Formulario de demostración: no se guarda ni se envía ningún dato.</p>
+      </form>
+      <p id="ok" class="ok" role="status" tabindex="-1" hidden></p>
+    </div>
+  </section>
 
-      <div class="grid three" id="paquetes"></div>
+</main>
 
-      <div id="carta"></div>
-    </section>
+<footer class="foot">
+  <p>Seis Figuras · Proyecto académico. Todos los datos, nombres y precios son ficticios.</p>
+  <p><a href="app.html#resumen">Ver la aplicación de demostración</a></p>
+</footer>
 
-    <!-- ANÁLISIS IA -->
-    <section id="analisis" class="page" hidden>
-      <header class="head">
-        <p class="eyebrow">Asesor de inteligencia artificial</p>
-        <h1 tabindex="-1">Análisis con IA</h1>
-        <p class="lead">Las cifras de tu negocio se envían a un asesor especializado en ingeniería industrial, que te dice qué mejorar primero.</p>
-      </header>
-
-      <div class="grid two">
-        <article class="card" style="--i:0">
-          <h2>Datos que se envían</h2>
-          <ul class="list" id="iaEntradas"></ul>
-        </article>
-        <article class="card ia" style="--i:1">
-          <div class="card-head">
-            <div><h2>Recomendaciones</h2><p class="muted">Basadas en los datos de septiembre.</p></div>
-            <button class="btn" type="button" id="btnIA">Analizar mi negocio</button>
-          </div>
-          <div id="iaSalida" aria-live="polite"></div>
-        </article>
-      </div>
-    </section>
-
-  </main>
-</div>
-
-<script src="app.js"></script>
+<script>
+const form = document.getElementById('form');
+const ok = document.getElementById('ok');
+const campos = [
+  ['nombre', v => v.trim().length > 0],
+  ['correo', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)],
+  ['tipo', v => v !== ''],
+];
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  let primero = null;
+  campos.forEach(([id, valido]) => {
+    const input = document.getElementById(id);
+    const mal = !valido(input.value);
+    input.setAttribute('aria-invalid', String(mal));
+    document.getElementById('e-' + id).hidden = !mal;
+    if (mal && !primero) primero = input;
+  });
+  if (primero) { primero.focus(); return; }
+  const nombre = form.nombre.value.trim().split(' ')[0];
+  ok.textContent = `¡Gracias, ${nombre}! Esto es una demostración, así que no se guardó nada. En el producto real recibirías tu acceso por correo.`;
+  ok.hidden = false;
+  form.reset();
+  ok.focus();
+});
+</script>
 </body>
 </html>

@@ -3,12 +3,14 @@
 Última revisión: 2026-10-05. Estado: **prototipo front-end funcional con datos de ejemplo**.
 
 ## Qué es
-Panel de productividad para pequeños negocios, mostrado con un perfil de ejemplo: **Casa Alba Catering** (San Juan, Puerto Rico). Es una app estática (HTML + CSS + JS vanilla), sin backend ni build. Se abre `index.html` directo en el navegador. Todo el contenido está en español.
+Panel de productividad para pequeños negocios, mostrado con un perfil de ejemplo: **Casa Alba Catering** (San Juan, Puerto Rico). Es una app estática (HTML + CSS + JS vanilla), sin backend ni build. Se abre `index.html` (landing de ventas) o `app.html` (demostración) directo en el navegador. Todo el contenido está en español.
 
 ## Archivos
 | Archivo | Contenido |
 |---|---|
-| `index.html` | Estructura: barra lateral y 6 secciones (hash routing). |
+| `index.html` + `landing.css` | Landing page de ventas (simulada) con enlace a la demostración. |
+| `Estrategia-de-mercadeo.docx` | Reporte de una página de la estrategia de mercadeo. |
+| `app.html` | Estructura: barra lateral y 6 secciones (hash routing). |
 | `app.js` | Datos de ejemplo, utilidades y lógica de cada página. |
 | `styles.css` | Estilo minimalista (paleta cálida, Newsreader + Geist), responsive, `prefers-reduced-motion`. |
 | `logo.png` | Logo de la marca, usado como favicon y en la barra lateral. |
